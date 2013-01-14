@@ -1,1 +1,154 @@
-<META http-equiv="refresh" content="0; URL=http://code.google.com/p/tv-renamer/">
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>TV Renamer by tvrenamer</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>TV Renamer</h1>
+        <p>A Java GUI utility to rename TV episodes from TV listings</p>
+
+
+        <p class="view"><a href="https://github.com/tvrenamer">View My GitHub Profile</a></p>
+
+      </header>
+      <section>
+        <h1>TVRenamer</h1>
+
+<p><a href="https://travis-ci.org/tvrenamer/tvrenamer"><img src="https://travis-ci.org/tvrenamer/tvrenamer.png" alt="Build Status"></a></p>
+
+<h2>About</h2>
+
+<p>TVRenamer is a Java GUI utility to rename TV episodes from TV listings<br>
+Basically, it will take an ugly filename like <strong>Lost.S06E05.DD51.720p.WEB-DL.AVC-FUSiON.mkv</strong> and rename it to <strong>Lost [6x05] Lighthouse.mkv</strong></p>
+
+<h2>Features</h2>
+
+<ul>
+<li>Rename many different shows at once</li>
+<li>Customise the format and content of the resulting filename</li>
+<li>Native look &amp; feel for your operating system</li>
+<li>Drag &amp; Drop or standard 'add file' interface</li>
+</ul><h2>Usage</h2>
+
+<p><a href="http://code.google.com/p/tv-renamer/downloads/list">Download</a> the correct version for your operating system (OSX, Windows, Linux) and architecture (32 or 64 bit)</p>
+
+<ul>
+<li>On Windows:
+
+<ol>
+<li>Unzip the downloaded file somewhere, possibly your Desktop or C:\Program Files</li>
+<li>Double click the .exe file</li>
+</ol>
+</li>
+<li>On OSX:
+
+<ol>
+<li>Unzip the downloaded file somewhere, possibly your Desktop or /Applications</li>
+<li>Double click the .app file</li>
+</ol>
+</li>
+<li>On Linux:
+
+<ol>
+<li>Unzip the downloaded file somewhere, possibly your Desktop</li>
+<li>It is easiest to add TVRenamer to the top Gnome bar (no need for the terminal).  Add a <a href="http://library.gnome.org/users/user-guide/2.32/gospanel-34.html.en">'Custom Application Launcher'</a> with the below settings:<br>
+Type: Application<br>
+Name: TVRenamer<br>
+Command: /TVRenamer-&lt;version&gt;/run-linux.sh<br>
+Icon: Can be anything, perhaps <a href="http://github.com/tvrenamer/tvrenamer/raw/master/res/icons/tvrenamer.png">our icon</a><br><em>If the application doesn't start, or if you have problems switch the Type to be 'Application in Terminal'</em>
+</li>
+<li>If you don't add it to the Gnome bar, open an terminal and <code>cd</code> to where you unzipped the file to.  Then <code>cd</code> into the TVRenamer-&lt;version&gt; folder.  There should be run-linux.sh and tvrenamer.jar file there.</li>
+<li>Execute the run script via <code>./run-linux.sh</code>
+</li>
+</ol>
+</li>
+</ul><h2>Common Problems</h2>
+
+<h3>Java version issues</h3>
+
+<p>Ensure that you have Java version 5 or 6 installed.  Type <code>java -version</code> into your terminal and ensure that the output is similar to:</p>
+
+<pre><code>java version "1.6.0_14"
+Java(TM) SE Runtime Environment (build 1.6.0_14-b08)
+Java HotSpot(TM) 64-Bit Server VM (build 14.0-b16, mixed mode)
+</code></pre>
+
+<h3>TVRenamer version issues</h3>
+
+<p>Ensure that you are running the correct version of TVRenamer for the version of Java you are running.  If you don't have it right, you get a helpful error message on startup (when running on the terminal), like below:<br>
+        Exception in thread "main" java.lang.UnsatisfiedLinkError: Cannot load 32-bit SWT libraries on 64-bit JVM
+To fix this, see the output of <code>java -version</code>, the last line will say if you are running 64-bit Java or not.  Then <a href="http://code.google.com/p/tv-renamer/downloads/list">download</a> the appropriate version.</p>
+
+<h2>Getting Support and Submitting Bug Reports</h2>
+
+<p><a href="http://code.google.com/p/tv-renamer/issues/list?can=1&amp;q=&amp;colspec=ID+Type+Status+Priority+Milestone+Owner+Summary&amp;cells=tiles">View past bug reports</a> and if that is no help then <a href="http://code.google.com/p/tv-renamer/issues/entry">submit a new one</a>.  The developers will be notified and you should hear back shortly.</p>
+
+<h2>Running in debug mode</h2>
+
+<p>If the application crashes it helps us greatly if you can provide us a stacktrace of what went wrong.  In order to do this, you just need to run the application in the terminal, then copy the output into <a href="http://code.google.com/p/tv-renamer/issues/entry">a new bug report</a>.</p>
+
+<p>If the application doesn't start with a java error, <a href="http://www.oracle.com/technology/sample_code/tech/java/sqlj_jdbc/files/9i_jdbc/EnvSetup.html">ensure that your JAVA_HOME environment variable is set correctly</a>.</p>
+
+<ul>
+<li>On Windows:
+
+<ol>
+<li>Open the Windows Command Prompt (Windows key + r, then type cmd and push enter)</li>
+<li>Navigate to where the TVRenamer application is.</li>
+<li>Execute <code>java -jar TVRenamer-&lt;version&gt;.exe</code>
+</li>
+</ol>
+</li>
+<li>On OSX:
+
+<ol>
+<li>Open the Terminal application (at /Applications/Utilities/Terminal.app)</li>
+<li>Navigate to where the TVRenamer application is.</li>
+<li>Execute it via <code>./TVRenamer-&lt;version&gt;.app</code>
+</li>
+</ol>
+</li>
+<li>On Linux:
+
+<ol>
+<li>Open the Terminal application (from the Gnome Applications menu)</li>
+<li>Navigate to where the TVRenamer application is.</li>
+<li>Execute the run script via <code>./TVRenamer-&lt;version&gt;.app/Contents/MacOS/run-mac.sh</code>
+</li>
+</ol>
+</li>
+</ul><h2>Contributions</h2>
+
+<p>The development team numbers just 2, so anything from Java code patches to UI/UX recommendations would be gratefully received.<br>
+To contribute to the code side of things you should know Java and it would be helpful if you know some SWT and git.  The easiest way to submit changes is via a <a href="http://help.github.com/forking/">guthub pull request</a> based off the <a href="http://github.com/tvrenamer/tvrenamer/tree/devel">devel branch</a>.<br>
+If you anything else (feature requests, comments, fanmail!), <a href="http://code.google.com/p/tv-renamer/issues/entry">create a new issue</a> and set the Type label to be 'Type-Enhancement' or 'Type-Other'.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-12655885-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
