@@ -4,25 +4,37 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>TV Renamer by tvrenamer</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/tvrenamer">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
+
     <div class="wrapper">
-      <header>
-        <h1>TV Renamer</h1>
-        <p>A Java GUI utility to rename TV episodes from TV listings</p>
 
-
-        <p class="view"><a href="https://github.com/tvrenamer">View My GitHub Profile</a></p>
-
-      </header>
       <section>
+        <div id="title">
+          <h1>TV Renamer</h1>
+          <p>A Java GUI utility to rename TV episodes from TV listings</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/tvrenamer">tvrenamer</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
         <h1>TVRenamer</h1>
 
 <h2>About</h2>
@@ -37,7 +49,11 @@ Basically, it will take an ugly filename like <strong>Lost.S06E05.DD51.720p.WEB-
 <li>Customise the format and content of the resulting filename</li>
 <li>Native look &amp; feel for your operating system</li>
 <li>Drag &amp; Drop or standard 'add file' interface</li>
-</ul><h2>Download</h2>
+</ul><h2>Screenshot</h2>
+
+<p><img src="https://github.com/tvrenamer/tvrenamer/wiki/tvrenamer-0.5b2.png" alt="Screenshot"></p>
+
+<h2>Download</h2>
 
 <p><a href="https://github.com/tvrenamer/tvrenamer/downloads">Download</a> the correct version for your operating system (OSX, Windows, Linux) and architecture (32 or 64 bit)</p>
 
@@ -50,11 +66,9 @@ Basically, it will take an ugly filename like <strong>Lost.S06E05.DD51.720p.WEB-
 <p>This project is a constant work in progress developed in our free time <a href="https://github.com/daveharris" class="user-mention">@daveharris</a> and <a href="https://github.com/vipuldelwadia" class="user-mention">@vipuldelwadia</a>. Contributions of <a href="https://github.com/tvrenamer/tvrenamer/issues">bug reports</a> or <a href="http://help.github.com/forking/">pull requests</a> are always gratefully received.
 The source is and always will be open!</p>
       </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
