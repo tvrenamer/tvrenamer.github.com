@@ -38,16 +38,44 @@ Basically, it will take an ugly filename like <strong>Lost.S06E05.DD51.720p.WEB-
 <h2>
 <a id="download" class="anchor" href="#download" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download</h2>
 
-<p>Download the correct version for your operating system (OSX, Windows, Linux) and architecture (32 or 64 bit):</p>
+<p><a href="https://github.com/tvrenamer/tvrenamer/releases/latest">Go to the latest release</a> and pick the file for your operating system and processor. The macOS and Windows downloads carry their own Java runtime, so there is nothing to install first.</p>
 
-<ul>
-<li><a href="https://github.com/tvrenamer/tvrenamer/releases/download/v0.8/TVRenamer-0.8-win64.exe">Windows 64-bit</a></li>
-<li><a href="https://github.com/tvrenamer/tvrenamer/releases/download/v0.8/TVRenamer-0.8-win32.exe">Windows 32-bit</a></li>
-<li><a href="https://github.com/tvrenamer/tvrenamer/releases/download/v0.8/TVRenamer-0.8-osx64.zip">OSX 64-bit</a></li>
-<li><a href="https://github.com/tvrenamer/tvrenamer/releases/download/v0.8/TVRenamer-0.8-osx32.zip">OSX 32-bit</a></li>
-<li><a href="https://github.com/tvrenamer/tvrenamer/releases/download/v0.8/TVRenamer-0.8-gtk64.zip">Linux 64-bit</a></li>
-<li><a href="https://github.com/tvrenamer/tvrenamer/releases/download/v0.8/TVRenamer-0.8-gtk32.zip">Linux 32-bit</a></li>
-</ul>
+<table>
+<thead>
+<tr><th>Download</th><th>For</th></tr>
+</thead>
+<tbody>
+<tr><td><code>macos-aarch64.dmg</code></td><td>Macs with Apple silicon (M1 and later)</td></tr>
+<tr><td><code>macos-x86_64.dmg</code></td><td>Intel Macs</td></tr>
+<tr><td><code>windows-x86_64-portable.zip</code></td><td>Windows on Intel or AMD</td></tr>
+</tbody>
+</table>
+
+<p>On macOS, open the <code>.dmg</code> and drag TVRenamer to your Applications folder. The bundles are signed and notarised, so they open without a warning.</p>
+
+<p>On Windows, unzip it anywhere and run <code>TVRenamer\TVRenamer.exe</code> from inside the folder. There is no installer, so it needs no admin rights and writes nothing to the registry. Uninstalling means deleting the folder. Nothing on Windows is signed yet, so SmartScreen will warn you the first time: choose 'More info', then 'Run anyway'.</p>
+
+<h3>
+<a id="the-zip" class="anchor" href="#the-zip" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The smaller zip</h3>
+
+<p>Every platform also has a plain zip of about 7MB, against 50MB for the bundles, because it carries no Java. Linux has only this one. Install <a href="https://adoptium.net/">Java 21 or later</a> first, then take the zip matching your system. Note that Windows has two: <code>windows-x86_64.zip</code> is this smaller one, not the <code>-portable</code> zip above.</p>
+
+<table>
+<thead>
+<tr><th>Download</th><th>For</th></tr>
+</thead>
+<tbody>
+<tr><td><code>linux-x86_64.zip</code></td><td>Linux on Intel or AMD</td></tr>
+<tr><td><code>linux-aarch64.zip</code></td><td>Linux on ARM</td></tr>
+<tr><td><code>macos-aarch64.zip</code></td><td>Macs with Apple silicon (M1 and later)</td></tr>
+<tr><td><code>macos-x86_64.zip</code></td><td>Intel Macs</td></tr>
+<tr><td><code>windows-x86_64.zip</code></td><td>Windows on Intel or AMD</td></tr>
+</tbody>
+</table>
+
+<p>Unzip it wherever you like and start it from the <code>bin</code> directory inside: <code>bin\tvrenamer.bat</code> on Windows, <code>bin/tvrenamer</code> on macOS and Linux.</p>
+
+<p>32-bit builds are gone. Eclipse stopped shipping 32-bit SWT natives in 2018, so if you need one, stay on <a href="https://github.com/tvrenamer/tvrenamer/releases/tag/v1.0b4">v1.0b4</a>.</p>
 
 <h2>
 <a id="more-information" class="anchor" href="#more-information" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>More Information</h2>
