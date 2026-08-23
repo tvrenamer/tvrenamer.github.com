@@ -16,7 +16,7 @@ Basically, it will take an ugly filename like
 
 ## [Screenshots](https://github.com/tvrenamer/tvrenamer/wiki/Screenshots)
 
-![Screenshot](https://raw.githubusercontent.com/wiki/tvrenamer/tvrenamer/tvrenamer-0.5b2.png)
+![TVRenamer renaming ten downloaded episodes into a tidy TV library](/images/screenshot.png)
 
 ## Download
 
